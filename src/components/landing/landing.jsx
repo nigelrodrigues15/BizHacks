@@ -5,9 +5,8 @@ import Button from "@material-ui/core/Button";
 const landing = () => {
   return (
     <div className="landing">
-      <div className="intro">
+      <img src="./Landing.png" alt=""/>
         <h1>Learn how to invest like a professional.</h1>
-      </div>
     </div>
   );
 };
