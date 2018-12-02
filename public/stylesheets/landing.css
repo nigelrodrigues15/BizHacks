@@ -54,56 +54,6 @@
     width: 100%;
 }
 
-#home-button {
-    border: 1px solid #4bb4ff;
-    padding: 10px 50px;
-}
-
-.about {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    display: none;
-}
-
-.about p {
-    margin: 20px 25vw;
-}
-
-.education {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    display: none;
-}
-
-.education h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.education div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.education-info {
-    height: 25vw;
-    width: 25vw;
-    font-size: 20px;
-    border: 1px solid black;
-}
-
-.education-info:hover {
-    box-shadow: 0 0 2px 2px black;
-}
-
 .Link {
     text-decoration: none;
     color: black;
@@ -125,4 +75,3 @@
 .dfblk {
     background-color: white;
 }
-
