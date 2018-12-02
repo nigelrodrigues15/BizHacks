@@ -1,6 +1,6 @@
 .steps_bar {
     width: 60%;
-    margin: 100px auto; 
+    margin: 15% 30%; 
 }
 .steps{
     counter-reset: step;
