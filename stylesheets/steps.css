@@ -61,6 +61,9 @@
     border:0px;
     padding:5px;
 }
+.questionaire label{
+    margin-top:15px;
+}
 .questionaire select {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
