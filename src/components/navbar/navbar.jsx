@@ -15,36 +15,30 @@ class Navbar extends React.Component {
 
   render() {
     return (
+      <div className="navbar">
       <div className="home-navbar">
         <div className="home-navbar-left">
           <Link className="Link" to="/">
-            <div className="dragonfly">
-              <div className="dfbl" />
-              <div />
-              <div />
-              <div className="dfbl" />
+            <div className="logo" >
+            <img src="./Nimbus.png" alt="" />
             </div>
           </Link>
-          <Link className="Link" to="/home">
-            <Button variant="outlined" id="home">
-              Home
-            </Button>
-          </Link>
         </div>
-        <div className="home-navbar-center">
+        <div className="home-navbar-right">
           <Link className="Link" to="/home">
             <Button variant="outlined" id="home-navbar-center-box1">
               Research
             </Button>
           </Link>
         </div>
-        <div className="home-navbar-center">
+        <div className="home-navbar-right">
           <Link className="Link" to="/home">
             <Button variant="outlined" id="home-navbar-center-box2">
               Education
             </Button>
           </Link>
         </div>
+      </div>
       </div>
     );
   }
