@@ -36,11 +36,61 @@
     }
     
     .nav-button {
-        color: white !important;
+        color: white;
         padding: 10px 1.5vw 5px 1.5vw;
         border-radius: 7px;
     }
     
     .nav-button:hover {
         background-color: rgb(0, 0, 0, 0.5) !important;
+    }
+
+    .question {
+        .home-navbar {
+            display: flex;
+            /* height: 70px; */
+            width: 100vw;
+            align-items: center;
+            position: absolute;
+            top: 2vh;
+            justify-content: space-between;
+        }
+        
+        .home-navbar-left {
+            display: inline-flex;
+            /* justify-content: space-between; */
+            align-items: center;
+            margin: 0 5vw 5vw 0;
+        }
+        
+        .home-navbar-right {
+            display: inline-flex;
+            /* justify-content: space-between; */
+            align-items: center;
+            margin: 0 5vw 5vw 0;
+            border-bottom: 3px solid #E75722;
+            colour: black;
+        }
+        
+        .logo {
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 5vw;
+            /* height: 30px; */
+        }
+        
+        .Link {
+            text-decoration: none !important;
+        }
+        
+        .nav-button {
+            color: black !important;
+            padding: 10px 1.5vw 5px 1.5vw;
+            border-radius: 7px;
+        }
+        
+        .nav-button:hover {
+            background-color: rgb(0, 0, 0, 0.5) !important;
+        }
     }

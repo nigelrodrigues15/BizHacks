@@ -21,7 +21,7 @@
     height: 15px;
     content: counter(step);
     counter-increment: step;
-    line-height: 30px;
+    line-height: 5px;
     border: 2px solid #9B9B9B;
     display: block;
     text-align: center;
@@ -35,7 +35,7 @@
     content: '';
     position: absolute;
     background-color: #9B9B9B;
-    top: 8px;
+    top: 5px;
     left: -50%;
     z-index: -1;
 }
@@ -51,4 +51,11 @@
 }
 .progressbar li.active + li:after {
     background-color: #609163;
+}
+.questionaire{
+    padding:100px 25%;
+
+    .insight{
+        border: solid 1px;
+    }
 }
