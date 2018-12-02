@@ -1,0 +1,22 @@
+.chart {
+    margin: 15vw 10vw 5vw 10vw;
+    width: 80vw;
+}
+
+.insight {
+   margin: 5vw 10vw; 
+   text-align: justify;
+}
+
+.insight h2 {
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+.insight p {
+    font-size: 11pt;
+    font-weight: lighter;
+}
+.total-cost img {
+    margin: 0vw 10vw 5vw 10vw;
+    width: 80vw;
+}

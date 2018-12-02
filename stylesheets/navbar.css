@@ -40,9 +40,17 @@
         padding: 10px 1.5vw 5px 1.5vw;
         border-radius: 7px;
     }
+    .navr-button {
+        color: black;
+        padding: 10px 1.5vw 5px 1.5vw;
+        border-radius: 7px;
+    }
     
     .nav-button:hover {
         background-color: rgb(0, 0, 0, 0.5) !important;
+    }
+    .navr-button:hover {
+        background-color: rgb(0, 0, 0, 0.3) !important;
     }
 
     .question {
