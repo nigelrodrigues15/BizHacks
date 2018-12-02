@@ -54,8 +54,7 @@
 }
 .questionaire{
     padding:100px 25%;
-
-    .insight{
-        border: solid 1px;
-    }
+}
+.insight{
+    border: solid 1px;
 }
