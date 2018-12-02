@@ -8,16 +8,16 @@
     align-items: center;
     justify-content: center;
 }
-.insight {
+.insights {
    margin: 5vw 10vw; 
    text-align: justify;
 }
 
-.insight h2 {
+.insights h2 {
     padding-bottom: 20px;
     font-weight: 500;
 }
-.insight p {
+.insights p {
     font-size: 11pt;
     font-weight: lighter;
 }
