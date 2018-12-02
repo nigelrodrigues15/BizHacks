@@ -16,7 +16,12 @@
     font-size: 11pt;
     font-weight: lighter;
 }
+.total-cost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .total-cost img {
     margin: 0vw 10vw 5vw 10vw;
-    width: 80vw;
+    width: 50vw;
 }
