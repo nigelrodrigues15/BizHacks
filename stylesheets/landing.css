@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5vw 10vw 10vw 10vw;
+    margin: 5vw 10vw 5vw 10vw;
 }
 .mission div {
     width: 20vw;
@@ -33,11 +33,11 @@
 .experts {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding-top: 5vh;
+    padding-top: 3vh;
     padding-bottom: 3vh;
     justify-content: center;
     align-items: center;
-    background-color: #609163;
+    /* background-color: #609163; */
 }
 
 .experts div{
@@ -63,13 +63,14 @@
 
 .talk {
     display: flex;
-    height: 10vw;
+    height: 7vw;
     width: 20vw;
     border: 2px solid #E75722;
     background: white;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 15pt;
     font-weight: bold;
+    color: #E75722;
 }
 .talk:hover {
     box-shadow: 2px 2px 1px 1px darkgrey;
