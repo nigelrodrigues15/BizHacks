@@ -1,6 +1,6 @@
 .steps_bar {
     width: 60%;
-    margin: 15% 30%; 
+    margin: 15% 27%; 
 }
 .steps{
     counter-reset: step;
@@ -86,7 +86,10 @@
     background-repeat: no-repeat;
 }
 .questionaire h4{
-    color:
+    color: #E75722;
+}
+.questionaire p{
+    color: #9B9B9B;
 }
 .insight{
     border: solid 1px #9B9B9B;
