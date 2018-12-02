@@ -48,6 +48,8 @@
             <script>
                 var initialCost = 2000;
                 var ctx = document.getElementById("myChart");
+                var capitalCost = document.getElementById("cost");
+
                 var myChart = new Chart(ctx, {
                     type: 'line',
                     data: {
@@ -82,8 +84,41 @@
                                 'rgba(0, 128, 0,1)',
                                 'rgba(0, 128, 0,1)',
                                 'rgba(0, 128, 0,1)'
-                            ],
-                        }]
+                            ]
+                        },
+                        {
+                                label: 'Business Value',
+                                data: [0, 0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                                backgroundColor: [
+                                    'rgba(0, 0, 0, 0)',
+                                    'rgba(0, 0, 0, 0)',
+                                    'rgba(0, 0, 0, 0)',
+                                    'rgba(0, 0, 0, 0)',
+                                    'rgba(0, 0, 0, 0)',
+                                    'rgba(0, 0, 0, 0)',
+                                    'rgba(0, 0, 0, 0)',
+                                    'rgba(0, 0, 0, 0)',
+                                    'rgba(0, 0, 0, 0)',
+                                    'rgba(0, 0, 0, 0)',
+                                    'rgba(0, 0, 0, 0)',
+                                    'rgba(0, 0, 0, 0)'
+                                ],
+                                borderColor: [
+                                    'rgba(0, 0, 0, 0.5)',
+                                    'rgba(0, 0, 0, 0.5)',
+                                    'rgba(0, 0, 0, 0.5)',
+                                    'rgba(0, 0, 0, 0.5)',
+                                    'rgba(0, 0, 0, 0.5)',
+                                    'rgba(0, 0, 0, 0.5)',
+                                    'rgba(0, 0, 0, 0.5)',
+                                    'rgba(0, 0, 0, 0.5)',
+                                    'rgba(0, 0, 0, 0.5)',
+                                    'rgba(0, 0, 0, 0.5)',
+                                    'rgba(0, 0, 0, 0.5)',
+                                    'rgba(0, 0, 0, 0.5)'
+                                ],
+                                pointRadius: 0
+                            }],
                     },
                     options: {
                         legend: {
@@ -124,6 +159,10 @@
 
         <div class="analysis">
             <div>
+                <p>Capital Cost</p>
+                <input id="cost" class="cost" type="text" placeholder="$2000.00">
+            </div>
+            <div>
                 <p>Average Revenue per Unit</p>
                 <input type="text" placeholder="$30.00">
             </div>
@@ -136,6 +175,11 @@
                 <input type="text" placeholder="$900.00">
             </div>
         </div>
+
+        <!-- <script>
+        capitalCost = 
+        
+        </script> -->
 
         <div class="total-cost">
             <img src=".\images\Screen Shot 2018-12-02 at 8.38.25 AM.png" alt="">
