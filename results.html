@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nimbus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./stylesheets/landing.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./stylesheets/navbar.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" media="screen" href="./stylesheets/results.css">
+</head>
+
+<body>
+    <div id="root">
+        <div class="home-navbar">
+            <div class="home-navbar-left">
+                <div class="logo">
+                    <img src="./images/Nimbus.png" alt="" />
+                </div>
+            </div>
+            <div class="home-navbar-right">
+                <h4 class="navr-button">
+                    Home
+                </h4>
+                <h4 class="navr-button">
+                    Partners
+                </h4>
+                <h4 class="navr-button">
+                    About
+                </h4>
+                <h4 class="navr-button">
+                    Sign Up
+                </h4>
+                <h4 class="navr-button">
+                    Sign In
+                </h4>
+            </div>
+        </div>
+        <div class="chart">
+
+            <canvas id="myChart"></canvas>
+            <script>
+                var initialCost = 2000;
+                var ctx = document.getElementById("myChart");
+                var myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ["0", "2", "4", "6", "8", "12", "14", "16", "18", "20", "22", "24"],
+                        datasets: [{
+                            label: 'Business Value',
+                            data: [-initialCost, initialCost * -0.25, initialCost * -0.1, initialCost * 1.2, initialCost * 1.4, initialCost * 1.5, initialCost, initialCost * 1.9, initialCost * 2.4, initialCost * 2, initialCost * 2.5, initialCost * 3.5, initialCost * 4],
+                            backgroundColor: [
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)'
+                            ],
+                            borderColor: [
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)'
+                            ],
+                        }]
+                    },
+                    options: {
+                        legend: {
+                            display: false
+                        },
+                        elements: {
+                            line: {
+                                tension: 0, // disables bezier curves
+                            }
+                        },
+                        scales: {
+                            xAxes: [{
+                                gridLines: {
+                                    display: false
+                                },
+                                display: true,
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: 'Month'
+                                }
+                            }],
+                            yAxes: [{
+                                gridLines: {
+                                    display: false
+                                },
+                                display: true,
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: 'Business Value'
+                                }
+                            }]
+                        }
+                    }
+                });
+            </script>
+
+        </div>
+
+        <div>
+            
+        </div>
+
+        <div class="total-cost">
+            <img src=".\images\Screen Shot 2018-12-02 at 8.38.25 AM.png" alt="">
+        </div>
+        <div class="insight">
+            <h2>Industry Insights</h2>
+            <p>
+                The yoga mat industry ​​analysis shows the evolving nature of fitness all over the world. Characterized
+                by embracing
+                the customer experience through product, driving brand engagement, dominating delivery, and competing
+                with
+                non-traditional players, this industry is only to grow. Today’s customers expect a high-quality product
+                every time, and
+                across every channel. Winning yoga mat providers will be the ones who invest wisely in digital,
+                operations, marketing,
+                and technology, and can harness the power of their delivery to serve as brand ambassadors at the
+                moments that matter.
+                The next-generation customer is technologically savvy, connected, and has high expectations. Yoga mat
+                brands brands who
+                understand their customers, capitalize on digital/technology investmentsand analytics, and seize upon
+                the opportunity
+                to engage customers in a highly personalized way can drive increased transaction frequency, customer
+                conversion, and
+                loyalty.</p>
+        </div>
+
+        <div class="insight">
+            <h2>Market Insight</h2>
+            <p>
+                In the yoga mat e-commerce business, consumers are more conscious than ever about making responsible
+                selections and
+                increasingly want to make sure they are purchasing high quality fitness equipment. The market demands
+                higher quality
+                products and they are more open to paying more for quality more than ever. For every 1000 units of yoga
+                mats sold in
+                e-commerce businesses, 80% are in the upper 20 percentile in terms of costs. This means that a large
+                percentage of yoga
+                mat users are prioritizing more of a higher quality product for their health.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
