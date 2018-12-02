@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <div class="question">
+    <div id="root">
         <div class="home-navbar">
             <div class="home-navbar-left">
                 <div class="logo">
@@ -26,21 +26,21 @@
                 </div>
             </div>
             <div class="home-navbar-right">
-                <Button class="nav-button">
-            Home
-        </Button>
-                <Button class="nav-button">
-            Partners
-        </Button>
-                <Button class="nav-button">
-            About
-        </Button>
-                <Button class="nav-button">
-            Sign Up
-        </Button>
-                <Button class="nav-button">
-            Sign In
-        </Button>
+                <h4 class="navr-button">
+                    Home
+                </h4>
+                <h4 class="navr-button">
+                    Partners
+                </h4>
+                <h4 class="navr-button">
+                    About
+                </h4>
+                <h4 class="navr-button">
+                    Sign Up
+                </h4>
+                <h4 class="navr-button">
+                    Sign In
+                </h4>
             </div>
         </div>
        
@@ -73,19 +73,46 @@
                 </br>
                 <label>Location (Postal Code)</label>
                 <br>
-                <input></input>
+                <select>
+                    <option>Downtown Toronto </option>                    
+                    <option>Scarborough </option>
+                    <option>Markham </option>
+                    <option>North York </option>
+                </select>
                 <br>
                 <label>Background</label>
                 <br>
-                <input></input>
+                <select>
+                    <option>Business </option>                    
+                    <option>Engineering </option>
+                    <option>Technology </option>
+                </select>
                 <br>
                 <label>Current Occupation</label>
                 <br>
-                <input></input>
+                <select>
+                    <option>Business </option>  
+                    <option>Consulting </option>                  
+                    <option>Engineering </option>
+                    <option>Financial Services </option>
+                    <option>Technology </option>
+                    <option>Teaching </option>
+                </select>
                 <br>
                 <label>Partners</label>
                 <br>
-                <input></input>
+                <select>
+                    <option>1 </option>  
+                    <option>2 </option>                  
+                    <option>3 </option>
+                    <option>4 </option>
+                    <option>5 </option>
+                    <option>6 </option>
+                    <option>7 </option>
+                    <option>8 </option>
+                    <option>9 </option>
+                    <option>10 </option>
+                </select>
                 <br>
             </div>
             <div class='col-sm-6'>
@@ -100,8 +127,9 @@
         <br>
         <br>
         <div class='wizard_ribbon text-center'>
-            <a herf="#">Back</a>
-            <a herf="#">Next</a>    
+            <a herf="./index.html"><button class='back_btn'>Back</button></a>
+            <a herf="./question_2.html"><button class='next_btn'>Next</button></a> 
+            <a href="./results.html"><button class="start">Get Started</button></a>   
 
 
         </div>

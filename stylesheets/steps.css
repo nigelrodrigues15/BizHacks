@@ -55,6 +55,18 @@
 .questionaire{
     padding:100px 25%;
 }
+.questionaire select {
+    background-color: #dadada;
+    width: 250px;
+}
 .insight{
-    border: solid 1px;
+    border: solid 1px #9B9B9B;
+    margin-top: 20%;
+    padding:10%;
+    box-shadow: 5px #7d7d7d;
+}
+.wizard_ribbon{
+    width: 100%;
+    height: 200px;
+    background-color: #7d7d7d;
 }
