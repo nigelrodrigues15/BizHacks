@@ -87,39 +87,39 @@
                             ]
                         },
                         {
-                                label: 'Business Value',
-                                data: [0, 0,0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                                backgroundColor: [
-                                    'rgba(0, 0, 0, 0)',
-                                    'rgba(0, 0, 0, 0)',
-                                    'rgba(0, 0, 0, 0)',
-                                    'rgba(0, 0, 0, 0)',
-                                    'rgba(0, 0, 0, 0)',
-                                    'rgba(0, 0, 0, 0)',
-                                    'rgba(0, 0, 0, 0)',
-                                    'rgba(0, 0, 0, 0)',
-                                    'rgba(0, 0, 0, 0)',
-                                    'rgba(0, 0, 0, 0)',
-                                    'rgba(0, 0, 0, 0)',
-                                    'rgba(0, 0, 0, 0)'
-                                ],
-                                borderColor: [
-                                    'rgba(0, 0, 0, 0.5)',
-                                    'rgba(0, 0, 0, 0.5)',
-                                    'rgba(0, 0, 0, 0.5)',
-                                    'rgba(0, 0, 0, 0.5)',
-                                    'rgba(0, 0, 0, 0.5)',
-                                    'rgba(0, 0, 0, 0.5)',
-                                    'rgba(0, 0, 0, 0.5)',
-                                    'rgba(0, 0, 0, 0.5)',
-                                    'rgba(0, 0, 0, 0.5)',
-                                    'rgba(0, 0, 0, 0.5)',
-                                    'rgba(0, 0, 0, 0.5)',
-                                    'rgba(0, 0, 0, 0.5)'
-                                ],
-                                pointRadius: 0,
-                                borderDash: [10, 5]
-                            }],
+                            label: 'Business Value',
+                            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                            backgroundColor: [
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)'
+                            ],
+                            borderColor: [
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)'
+                            ],
+                            pointRadius: 0,
+                            borderDash: [10, 5]
+                        }],
                     },
                     options: {
                         legend: {
@@ -159,10 +159,10 @@
         </div>
 
         <div class="analysis">
-            <!-- <div>
+            <div>
                 <p>Capital Cost</p>
-                <input id="cost" class="cost" type="text" placeholder="$2000.00">
-            </div> -->
+                <input id="cost" class="cost" type="text" value="$2000">
+            </div>
             <div>
                 <p>Average Revenue per Unit</p>
                 <input type="text" placeholder="$30.00">
@@ -177,10 +177,121 @@
             </div>
         </div>
 
-        <!-- <script>
-        capitalCost = 
-        
-        </script> -->
+        <script>
+            var ctx = document.getElementById("myChart");
+            var capitalCost = document.getElementById("cost");
+            console.log(capitalCost);
+            initialCost = parseFloat(capitalCost.value.slice(1))
+            console.log(initialCost);
+
+            capitalCost.addEventListener('change', () => {
+                initialCost = parseFloat(capitalCost.value.slice(1))
+                var myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ["0", "2", "4", "6", "8", "12", "14", "16", "18", "20", "22", "24"],
+                        datasets: [{
+                            label: 'Business Value',
+                            data: [-initialCost, initialCost * -0.1*Math.random(), initialCost * -1* Math.random(), initialCost * Math.random(), initialCost * 1.4* Math.random(), initialCost * 1.5* Math.random(), initialCost, initialCost * 1.9, initialCost * 2.4, initialCost *2.9 * Math.random(), initialCost * 2.5, initialCost * 3.5, initialCost * 4],
+                            backgroundColor: [
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)'
+                            ],
+                            borderColor: [
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)',
+                                'rgba(0, 128, 0,1)'
+                            ]
+                        },
+                        {
+                            label: 'Business Value',
+                            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                            backgroundColor: [
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)',
+                                'rgba(0, 0, 0, 0)'
+                            ],
+                            borderColor: [
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)',
+                                'rgba(0, 0, 0, 0.5)'
+                            ],
+                            pointRadius: 0,
+                            borderDash: [10, 5]
+                        }],
+                    },
+                    options: {
+                        legend: {
+                            display: false
+                        },
+                        elements: {
+                            line: {
+                                tension: 0, // disables bezier curves
+                            }
+                        },
+                        scales: {
+                            xAxes: [{
+                                gridLines: {
+                                    display: false
+                                },
+                                display: true,
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: 'Month'
+                                }
+                            }],
+                            yAxes: [{
+                                gridLines: {
+                                    display: false
+                                },
+                                display: true,
+                                scaleLabel: {
+                                    display: true,
+                                    labelString: 'Business Value'
+                                }
+                            }]
+                        }
+                    }
+                });
+            });
+        </script>
 
         <div class="total-cost">
             <img src=".\images\Screen Shot 2018-12-02 at 8.38.25 AM.png" alt="">
