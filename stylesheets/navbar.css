@@ -38,6 +38,7 @@
     .nav-button {
         color: white !important;
         padding: 10px 1.5vw 5px 1.5vw;
+        border-radius: 7px;
     }
     
     .nav-button:hover {
