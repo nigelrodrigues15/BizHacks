@@ -1,7 +1,12 @@
 .chart {
     /* display: block; */
-    margin: 15vw 20vw 5vw 20vw;
+    margin: 10vw 20vw 5vw 20vw;
     width: 60vw;
+}
+.chart h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .insight {
    margin: 5vw 10vw; 

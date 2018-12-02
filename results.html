@@ -21,7 +21,7 @@
         <div class="home-navbar">
             <div class="home-navbar-left">
                 <div class="logo">
-                  <a href="./index.html"><img src="./images/Nimbus.png" alt="" /></a>  
+                    <a href="./index.html"><img src="./images/Nimbus.png" alt="" /></a>
                 </div>
             </div>
             <div class="home-navbar-right">
@@ -41,9 +41,14 @@
                     Sign In
                 </h4>
             </div>
+
         </div>
         <div class="chart">
-
+            <div>
+                <h2>Results</h2>
+                <br><br>
+            </div>
+            <br><br>
             <canvas id="myChart"></canvas>
             <script>
                 var initialCost = 2000;
@@ -192,7 +197,7 @@
                         labels: ["0", "2", "4", "6", "8", "12", "14", "16", "18", "20", "22", "24"],
                         datasets: [{
                             label: 'Business Value',
-                            data: [-initialCost, initialCost * -0.1*Math.random(), initialCost * -1* Math.random(), initialCost * Math.random(), initialCost * 1.4* Math.random(), initialCost * 1.5* Math.random(), initialCost, initialCost * 1.9, initialCost * 2.4, initialCost *2.9 * Math.random(), initialCost * 2.5, initialCost * 3.5, initialCost * 4],
+                            data: [-initialCost, initialCost * -0.1 * Math.random(), initialCost * -1 * Math.random(), initialCost * Math.random(), initialCost * 1.4 * Math.random(), initialCost * 1.5 * Math.random(), initialCost, initialCost * 1.9, initialCost * 2.4, initialCost * 2.9 * Math.random(), initialCost * 2.5, initialCost * 3.5, initialCost * 4],
                             backgroundColor: [
                                 'rgba(0, 0, 0, 0)',
                                 'rgba(0, 0, 0, 0)',
