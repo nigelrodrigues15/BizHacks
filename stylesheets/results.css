@@ -1,8 +1,8 @@
 .chart {
-    margin: 15vw 10vw 5vw 10vw;
-    width: 80vw;
+    /* display: block; */
+    margin: 15vw 20vw 5vw 20vw;
+    width: 60vw;
 }
-
 .insight {
    margin: 5vw 10vw; 
    text-align: justify;
@@ -16,7 +16,21 @@
     font-size: 11pt;
     font-weight: lighter;
 }
+.total-cost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .total-cost img {
     margin: 0vw 10vw 5vw 10vw;
-    width: 80vw;
+    width: 50vw;
+}
+.analysis {
+    margin-left: 35vw;
+    margin-right: 35vw;
+}
+.analysis *{
+    display: flex;
+    justify-content: space-between;
+ margin-bottom: 20px;
 }
