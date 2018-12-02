@@ -6,4 +6,74 @@
 
 .landing img {
     width: 100vw;
+    /* height: 100vh; */
+}
+.mission {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5vw 10vw 10vw 10vw;
+}
+.mission div {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.mission img {
+    height: 100px;
+}
+.mission h5 {
+    display: inline-block;
+    color: darkgray;
+    font-weight: 800;
+}
+.experts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #609163;
+}
+
+.experts div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experts img {
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    height: 20vw;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+.experts button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.talk {
+    display: flex;
+    height: 10vw;
+    width: 20vw;
+    border: 2px solid #E75722;
+    background: white;
+    border-radius: 5px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+.talk:hover {
+    box-shadow: 2px 2px 1px 1px darkgrey;
+    background: #E75722;
+    color: white;
+
 }
