@@ -1,0 +1,27 @@
+{
+  "name": "bizhacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nigelrodrigues15/BizHacks.git"
+  },
+  "keywords": [
+    "BizHack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nigelrodrigues15/BizHacks/issues"
+  },
+  "homepage": "https://github.com/nigelrodrigues15/BizHacks#readme"
+}
