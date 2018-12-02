@@ -14,6 +14,10 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./stylesheets/navbar.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" media="screen" href="./stylesheets/results.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./stylesheets/steps.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+</head>
 </head>
 
 <body>
@@ -21,7 +25,7 @@
         <div class="home-navbar">
             <div class="home-navbar-left">
                 <div class="logo">
-                  <a href="./index.html"><img src="./images/Nimbus.png" alt="" /></a>  
+                    <a href="./index.html"><img src="./images/Nimbus.png" alt="" /></a>
                 </div>
             </div>
             <div class="home-navbar-right">
@@ -41,9 +45,14 @@
                     Sign In
                 </h4>
             </div>
+
         </div>
         <div class="chart">
-
+            <div>
+                <h2>Results</h2>
+                <br><br>
+            </div>
+            <br><br>
             <canvas id="myChart"></canvas>
             <script>
                 var initialCost = 2000;
@@ -192,7 +201,7 @@
                         labels: ["0", "2", "4", "6", "8", "12", "14", "16", "18", "20", "22", "24"],
                         datasets: [{
                             label: 'Business Value',
-                            data: [-initialCost, initialCost * -0.1*Math.random(), initialCost * -1* Math.random(), initialCost * Math.random(), initialCost * 1.4* Math.random(), initialCost * 1.5* Math.random(), initialCost, initialCost * 1.9, initialCost * 2.4, initialCost *2.9 * Math.random(), initialCost * 2.5, initialCost * 3.5, initialCost * 4],
+                            data: [-initialCost, initialCost * -0.1 * Math.random(), initialCost * -1 * Math.random(), initialCost * Math.random(), initialCost * 1.4 * Math.random(), initialCost * 1.5 * Math.random(), initialCost, initialCost * 1.9, initialCost * 2.4, initialCost * 2.9 * Math.random(), initialCost * 2.5, initialCost * 3.5, initialCost * 4],
                             backgroundColor: [
                                 'rgba(0, 0, 0, 0)',
                                 'rgba(0, 0, 0, 0)',
@@ -296,7 +305,7 @@
         <div class="total-cost">
             <img src=".\images\Screen Shot 2018-12-02 at 8.38.25 AM.png" alt="">
         </div>
-        <div class="insight">
+        <div class="insights">
             <h2>Industry Insights</h2>
             <p>
                 The yoga mat industry ​​analysis shows the evolving nature of fitness all over the world. Characterized
@@ -318,7 +327,7 @@
                 loyalty.</p>
         </div>
 
-        <div class="insight">
+        <div class="insights">
             <h2>Market Insight</h2>
             <p>
                 In the yoga mat e-commerce business, consumers are more conscious than ever about making responsible
@@ -331,6 +340,15 @@
                 percentage of yoga
                 mat users are prioritizing more of a higher quality product for their health.
             </p>
+        </div>
+        <div class="footer">
+            <img src="./images/Result.png" alt="">
+        </div>
+        <div class='wizard_ribbon text-center'>
+            <a href="./index.html"><button class='btn next_btn'>Sign Up</button></a>
+        </div>
+        <div class="footer">
+            <img src="./images/Banner.png" alt="">
         </div>
     </div>
 </body>

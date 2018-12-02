@@ -1,18 +1,23 @@
 .chart {
     /* display: block; */
-    margin: 15vw 20vw 5vw 20vw;
+    margin: 10vw 20vw 5vw 20vw;
     width: 60vw;
 }
-.insight {
+.chart h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.insights {
    margin: 5vw 10vw; 
    text-align: justify;
 }
 
-.insight h2 {
+.insights h2 {
     padding-bottom: 20px;
     font-weight: 500;
 }
-.insight p {
+.insights p {
     font-size: 11pt;
     font-weight: lighter;
 }
@@ -43,4 +48,7 @@ text-align: center;
 }
 .cost {
     border: 1px solid #609163;
+}
+.footer img{
+    width: 100vw;
 }
