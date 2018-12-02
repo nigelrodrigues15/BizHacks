@@ -15,12 +15,11 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <div className="navbar">
       <div className="home-navbar">
-        <div className="home-navbar-left">
+        <div className="home-navbar-right">
           <Link className="Link" to="/">
-            <div className="logo" >
-            <img src="./Nimbus.png" alt="" />
+            <div className="logo">
+              <img src="./Nimbus.png" alt="" />
             </div>
           </Link>
         </div>
@@ -30,15 +29,12 @@ class Navbar extends React.Component {
               Research
             </Button>
           </Link>
-        </div>
-        <div className="home-navbar-right">
           <Link className="Link" to="/home">
             <Button variant="outlined" id="home-navbar-center-box2">
               Education
             </Button>
           </Link>
         </div>
-      </div>
       </div>
     );
   }
