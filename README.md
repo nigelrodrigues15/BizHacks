@@ -1,4 +1,5 @@
 # Nimbus
+Project is part of the small business hackathon sponsored by Intuit. #smallbizhack
 [Live Link](https://nigelrodrigues15.github.io/Nimbus/)
 
 # Usage
